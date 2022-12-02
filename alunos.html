@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Tech4me</title>
+</head>
+<style>
+    input{
+        border-color: aqua;
+        border-radius: 10px;
+    }
+    textarea{
+        border-color: blue;
+        border-radius: 10px;
+    }
+    button{
+        color:aqua ;
+        background-color: black;
+    }
+ 
+</style>
+<body>
+    
+    <h1>Cadastre-se na nossa escola do TECH4JOBS</h1>
+    <form action="http://localhost/3003/alunos">
+    <div>    <p>Seu nome e sua idade:</p>
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="number" name="idade" placeholder="Idade" required>
+            <p>Cadastre sua senha:</p>
+            <input type="password" name="senha" placeholder="Senha" maxlength="8" minlength="5"> <p><em>(Maximo 8 caracteres)</em></p>
+    </div>
+&nbsp;    
+    <div>
+        <label>Insira seu sexo:</label>
+    </div>
+&nbsp;    
+    <div>
+        <label>Feminino</label>
+            <input type="radio" name="sexo" value="fem" required>
+    </div>
+    <div>    
+        <label>Masculino</label>
+            <input type="radio" name="sexo" value="masc">
+    </div>
+&nbsp;
+&nbsp;
+<div>
+    <textarea name="comentario" id="descrição" cols="20" rows="10" required placeholder="Fale sobre seus sonhos... inspirações..."></textarea>
+</div>
+&nbsp;
+<div>
+    <label>Aceito os termos de condição</label>
+        <input type="checkbox" required>
+</div>
+
+        <button type="submit">Matricule-se</button>
+    </form>
+&nbsp;
+    <table>       
+         <caption>Informações sobre alunos da Tech4me</caption>   
+            <tr> <!--Table row-->
+                <th>Alunos</th> <!-- Table header-->
+                <th>Idade</th>
+            </tr> 
+        <thead>
+        <tbody> <!--Corpo-->
+            <tr>
+                <td>Aline Ribeiro</td> <!--Table DATA-->
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Alex Murtha</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Ana Macedo</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Brayan</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Brian Oliveira</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Carlos Henrique</td> 
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Christian</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Felipe Valentim</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Gabriel Muniz</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Giancarlo</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Karine Reis</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Laisa Matos</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Maxwell Santos</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Nicolas Baran</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Rafael Chiappetta</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Rebeca Francklin</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Vini Lourenco</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Yan Carlos</td>
+                <td>18</td>
+            </tr>    
+        </tbody>     
+        <tfoot> <!--Pé -->
+            <tr>
+                <td colspan="2">Ao total 18 alunos</td>
+            </tr>
+        </tfoot>   
+    </table>
+
+   
+
+    
+</body>
+</html>
