@@ -4,146 +4,147 @@
    <title>Tech4me</title>
 </head>
 <style>
-    input{
-        border-color: aqua;
+    input{     /*Aqui eu coloquei input, ele estiliza todos os campos onde eu posso colocar input de textos(senhas e etc) e acaba ignorando aqueles inputs onde não há texto, por alguma razão*/
+       border-color: blue;
         border-radius: 10px;
     }
     textarea{
-        border-color: blue;
+       border-color: blue;
         border-radius: 10px;
     }
     button{
-        color:aqua ;
+        color: blue ;
         background-color: black;
     }
+    .texto{
+        color: red;
+    }
+  
+ 
  
 </style>
-<body>
+<body style="background-color:aqua ;">
     
     <h1>Cadastre-se na nossa escola do TECH4JOBS</h1>
-    <form action="http://localhost/3003/alunos">
-    <div>    <p>Seu nome e sua idade:</p>
-            <input type="text" name="nome" placeholder="Nome" required>
+    <form align="center" action="http://localhost/3003/alunos" method="get"> <!--Aqui começa o formulário-->
+        <div>   <!--Separei uma div para cada sessão para o quesito organização-->  
+        <p>Seu nome e sua idade:<sup class="texto">*Obrigatório</sup></p> <!--Sup para deixar claro que é obrigatório(Acrescenta visualmente)-->
+            <input type="text" name="nome&sobrenome" placeholder="Nome">
             <input type="number" name="idade" placeholder="Idade" required>
-            <p>Cadastre sua senha:</p>
-            <input type="password" name="senha" placeholder="Senha" maxlength="8" minlength="5"> <p><em>(Maximo 8 caracteres)</em></p>
+        <p>Cadastre sua senha:<sup class="texto">*Obrigatório</sup></p>
+            <input type="password" name="senha" placeholder="Senha" maxlength="8" minlength="5"> <p><em>(Maximo 8 caracteres e minimo de 5)</em></p>
     </div>
 &nbsp;    
-    <div>
-        <label>Insira seu sexo:</label>
-    </div>
-&nbsp;    
-    <div>
+<div>
+        <label>Insira seu sexo:<sup class="texto">*Obrigatório</sup></label><br />    
         <label>Feminino</label>
-            <input type="radio" name="sexo" value="fem" required>
-    </div>
-    <div>    
+        <input type="radio" name="sexo" value="fem" required>   
         <label>Masculino</label>
-            <input type="radio" name="sexo" value="masc">
+        <input type="radio" name="sexo" value="masc">
     </div>
-&nbsp;
 &nbsp;
 <div>
-    <textarea name="comentario" id="descrição" cols="20" rows="10" required placeholder="Fale sobre seus sonhos... inspirações..."></textarea>
+    <textarea name="comentario" id="descrição" cols="20" rows="10" required; placeholder="Fale sobre seus sonhos... inspirações..."></textarea>
 </div>
 &nbsp;
 <div>
-    <label>Aceito os termos de condição</label>
-        <input type="checkbox" required>
+    <label>Aceito os termos de condição<sup class="texto">*Obrigatório</sup></label>
+    <input type="checkbox"> <!--Vou retirar o required, é opcional-->
 </div>
 
         <button type="submit">Matricule-se</button>
-    </form>
+    </form> <!--Aqui termina o formulário-->
 &nbsp;
-    <table>       
-         <caption>Informações sobre alunos da Tech4me</caption>   
-            <tr> <!--Table row-->
-                <th>Alunos</th> <!-- Table header-->
-                <th>Idade</th>
-            </tr> 
-        <thead>
-        <tbody> <!--Corpo-->
-            <tr>
-                <td>Aline Ribeiro</td> <!--Table DATA-->
-                <td>21</td>
-            </tr>
-            <tr>
-                <td>Alex Murtha</td>
-                <td>22</td>
-            </tr>
-            <tr>
-                <td>Ana Macedo</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td>Brayan</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td>Brian Oliveira</td>
-                <td>16</td>
-            </tr>
-            <tr>
-                <td>Carlos Henrique</td> 
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Christian</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>Felipe Valentim</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>Gabriel Muniz</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Giancarlo</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Karine Reis</td>
-                <td>21</td>
-            </tr>
-            <tr>
-                <td>Laisa Matos</td>
-                <td>17</td>
-            </tr>
-            <tr>
-                <td>Maxwell Santos</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Nicolas Baran</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Rafael Chiappetta</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Rebeca Francklin</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Vini Lourenco</td>
-                <td>17</td>
-            </tr>
-            <tr>
-                <td>Yan Carlos</td>
-                <td>18</td>
-            </tr>    
-        </tbody>     
-        <tfoot> <!--Pé -->
-            <tr>
-                <td colspan="2">Ao total 18 alunos</td>
-            </tr>
-        </tfoot>   
-    </table>
+<table align="center" class="tabela" border="1px" style="background-color: white;">  
+    <thead>    
+     <caption>Informações sobre alunos da Tech4me</caption>   
+        <tr> <!--Table row-->
+            <th>Alunos</th> <!-- Table header-->
+            <th>Idade</th>
+        </tr> 
+    <thead>
+    <tbody> <!--Corpo-->
+        <tr>
+            <td>Aline Ribeiro</td> <!--Table DATA-->
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Alex Murtha</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Ana Macedo</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Brayan</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Brian Oliveira</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Carlos Henrique</td> 
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Christian</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Felipe Valentim</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Gabriel Muniz</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Giancarlo</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Karine Reis</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Laisa Matos</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Maxwell Santos</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Nicolas Baran</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Rafael Chiappetta</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Rebeca Francklin</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Vini Lourenco</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Yan Carlos</td>
+            <td>18</td>
+        </tr>    
+    </tbody>     
+    <tfoot> <!--Pé -->
+        <tr>
+            <td colspan="2">Ao total 18 alunos</td>
+        </tr>
+    </tfoot>   
+</table>
 
-   
+
 
     
 </body>
