@@ -19,6 +19,10 @@
     .texto{
         color: red;
     }
+    fieldset{
+        display: inline-block;
+        width: 585px;
+    }
   
  
  
@@ -26,14 +30,16 @@
 <body style="background-color:aqua ;">
     
     <h1>Cadastre-se na nossa escola do TECH4JOBS</h1>
+    <fieldset>
+        <legend>Preencha as informações abaixo para cadastro:</legend>
     <form align="center" action="http://localhost/3003/alunos" method="get"> <!--Aqui começa o formulário-->
         <div>   <!--Separei uma div para cada sessão para o quesito organização-->  
         <p>Seu nome e sua idade:<sup class="texto">*Obrigatório</sup></p> <!--Sup para deixar claro que é obrigatório(Acrescenta visualmente)-->
             <input type="text" name="nome&sobrenome" placeholder="Nome">
             <input type="number" name="idade" placeholder="Idade" required>
         <p>Cadastre sua senha:<sup class="texto">*Obrigatório</sup></p>
-            <input type="password" name="senha" placeholder="Senha" maxlength="8" minlength="5"> <p><em>(Maximo 8 caracteres e minimo de 5)</em></p>
-    </div>
+            <input type="password" name="senha" title="Para uma melhor senha ultilize caracteres especiais, ex: %$_-@" placeholder="Senha" maxlength="8" minlength="5"> <p><em>(Maximo 8 caracteres e minimo de 5)</em></p>
+    </div> <!--Senha contém mouseover!-->
 &nbsp;    
 <div>
         <label>Insira seu sexo:<sup class="texto">*Obrigatório</sup></label><br />    
@@ -48,16 +54,18 @@
 </div>
 &nbsp;
 <div>
-    <label>Aceito os termos de condição<sup class="texto">*Obrigatório</sup></label>
-    <input type="checkbox"> <!--Vou retirar o required, é opcional-->
+    <input type="checkbox" id="box"> <!--Vou retirar o required, é opcional-->
+    <label for="box">Aceito os termos de condição<sup class="texto">*Obrigatório</sup></label>
 </div>
 
-        <button type="submit">Matricule-se</button>
-    </form> <!--Aqui termina o formulário-->
+<button type="submit">Matricule-se</button>
+</form>
+</fieldset> <!--Aqui termina o formulário-->
 &nbsp;
+<fieldset> <!--Aqui começa a tabela-->
+    <legend>Informações sobre os alunos da TECH4ME</legend>
 <table align="center" class="tabela" border="1px" style="background-color: white;">  
-    <thead>    
-     <caption>Informações sobre alunos da Tech4me</caption>   
+    <thead>      
         <tr> <!--Table row-->
             <th>Alunos</th> <!-- Table header-->
             <th>Idade</th>
@@ -139,9 +147,10 @@
     </tbody>     
     <tfoot> <!--Pé -->
         <tr>
-            <td colspan="2">Ao total 18 alunos</td>
+            <td colspan="2">Temos mais 32 VAGAS!</td>
         </tr>
     </tfoot>   
+</fieldset>
 </table>
 
 
