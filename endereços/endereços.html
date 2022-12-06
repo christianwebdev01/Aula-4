@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereço</title>
+    <style>
+        header{
+            position: absolute;
+            width: 1279px;
+            line-height: 0;
+            height: 62px;
+            background-color: aqua;
+            top: 0;
+            left: 0;
+            
+            
+        }
+        #carrinho{
+            position: absolute;
+            top: -15px;
+            left: 485px;
+            
+            
+        }
+        #textoheader{
+            position: absolute;
+            text-transform: uppercase;
+            font-size: x-large;
+            font-weight:800;
+            top: 10px;
+            left: 15px;
+        }
+        #logo{
+            position:absolute;
+          
+            right: 0;
+            top: -20px;
+            height: 100px;
+            width: 100px;
+        }
+        fieldset{
+            position: absolute;
+            top: 90px;
+            
+            
+        }
+        input{
+          
+        }
+        label{
+            
+        }
+        .space{
+            margin-left: 20px;
+        }
+        
+
+        
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="imgs/tec4.png" alt="Logo da Tech4me" height="110px" width="100px"></div>
+       <img id="carrinho" src="imgs/carrinho.png" alt="Carrinho de compras" height="80">
+       <h1 id="textoheader">Carrinho de compras <span style="border: 3px solid green;">selecionado</span></h1>
+    </header>
+    <fieldset>
+        <legend>Preencha seu endereço</legend>
+        <form action="#" method="get">
+            <p>Todas as informações abaixo são obrigatórias<sup style="color: red;">*</sup></p><br/>
+            <label for="rua">Rua:</label>
+                <input type="text" name="rua" id="rua" placeholder="Ex: Rua Pastor Caciano" pattern="[A-Za-z]3,50}" required>
+            <label class="space" for="numero">Número:</label>
+                <input  type="number" name="numero" id="numero" required><br/>
+            <br/><label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required pattern="[A-Za-z]3,50}">
+            <label class="space" for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Ex: Teresópolis" required pattern="[A-Za-z]3,50}">
+            <select class="space" name="UF" id="uf" required>
+               <option value="UF">Acre</option>
+               <option value="UF">Alagoas</option>
+               <option value="UF">Amazonas</option>
+               <option value="UF">Amapá</option>
+               <option value="UF">Bahia</option>
+               <option value="UF">Ceará</option>
+               <option value="UF">Distrito Federal</option>
+               <option value="UF">Espírito Santo</option>
+               <option value="UF">Goiás</option>
+               <option value="UF">Maranhão</option>
+               <option value="UF">Mato Grosso</option>
+               <option value="UF">Mato Grosso do Sul</option>
+               <option value="UF">Minas Gerais</option>
+               <option value="UF">Pará</option>
+               <option value="UF">Paraiba</option>
+               <option value="UF">Paraná</option>
+               <option value="UF">Pernambuco</option>
+               <option value="UF">Piauí</option>
+               <option value="UF">Rio de Janeiro</option>
+               <option value="UF">Rio Grande do Norte</option>
+               <option value="UF">Rio Grande do Sul</option>
+               <option value="UF">Rondônia</option>
+               <option value="UF">Roraima</option>
+               <option value="UF">Santa Catarina</option>
+               <option value="UF">São Paulo</option>
+               <option value="UF">Sergipe</option>
+               <option value="UF">Tocantins</option>
+            </select><br/>
+            <br/><input type="checkbox" checked required>
+            <label for="check">O endereço de entrega é o mesmo de cobrança</label><br/>
+            <br/><button type="submit">Incluir meu endereço</button>
+
+        </form>
+    </fieldset>
+    
+
+
+</body>
+</html>
+
+<!--Ao fazer compras online, no endereço de entrega precisamos informar a rua, 
+    número, bairro, cidade e estado para receber o produto em casa. 
+
+    Crie um formulário para preenchimento desses dados, colocando rótulos
+     e os campos corretos para cada informação. Para o UF, crie uma caixa
+     de seleção, onde o valor das opções é a sigla da UF e o texto é o nome
+      completo do estado. Acima do botão de “Incluir endereço”, deve existir
+       a caixa de marcação “O endereço de entrega é o mesmo de cobrança”.-->
