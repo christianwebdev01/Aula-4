@@ -14,15 +14,18 @@
             background-color: aqua;
             top: 0;
             left: 0;
-            
+            user-select: none; /*O usuário não pode selecionar a DIV*/
             
         }
         #carrinho{
             position: absolute;
             top: -15px;
             left: 485px;
-            
-            
+            cursor: pointer;
+        }
+        #carrinho:hover{
+            padding: 20px;
+            transition: 0.5s;
         }
         #textoheader{
             position: absolute;
@@ -40,16 +43,15 @@
             height: 100px;
             width: 100px;
         }
+        /*#logo:hover{
+            padding: 20px;
+            transition: 0.5s;*/
+        
+
         fieldset{
             position: absolute;
             top: 90px;
-            
-            
-        }
-        input{
-          
-        }
-        label{
+            user-select: none;  
             
         }
         .space{
@@ -73,7 +75,7 @@
         <form action="#" method="get">
             <p>Todas as informações abaixo são obrigatórias<sup style="color: red;">*</sup></p><br/>
             <label for="rua">Rua:</label>
-                <input type="text" name="rua" id="rua" placeholder="Ex: Rua Pastor Caciano" pattern="[A-Za-z]3,50}" required>
+                <input type="text" name="rua" id="rua" placeholder="Ex: Rua Pastor Caciano" pattern="[A-Za-z]3,50}" required> <!--Pattern usado para declarar que somente letras Aa-Zz são permitido de no min 3 letras max 50-->
             <label class="space" for="numero">Número:</label>
                 <input  type="number" name="numero" id="numero" required><br/>
             <br/><label for="bairro">Bairro:</label>
