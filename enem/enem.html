@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENEM</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Roboto+Condensed:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+     body{
+        height: 1000px;
+        background-color: antiquewhite;
+     }
+     header{
+        
+        position: absolute;
+        top: 0;
+        width: 1100px;
+        height: 76px;
+     }
+     .titulo{
+        font-family: 'Klee One', cursive;
+        display: flex;
+        line-height: 1px;
+
+     }
+     .logo{
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        right: 0;
+        top: 0; 
+       
+     }
+     .menu{
+       position: absolute;
+       border: 1px solid black;
+        right: 1px;
+       top: 30px; 
+     }
+     .contato{
+        position: absolute;
+       border: 1px solid black;
+        right: 60px;
+       top: 30px;  
+     }
+     aside{
+        position: fixed;
+        height: 480px;
+        width: 100px;
+        background-color: white;
+        right: 0;
+        top: 100px;
+        text-align: center;
+        line-height: 58;
+    }
+    article>p{
+       line-height: 25px;
+       font-weight: bolder;
+       word-spacing: 6px;
+       font-family: 'Exo 2', sans-serif;
+    }
+    fieldset{
+        width: 900px;
+        text-align: center;
+    }  
+    em{
+        font-weight: bold;
+    }
+    hr{
+        background-color: red;
+    }
+    button{
+        width: 150px;
+        height: 30px;
+        background-color: black;
+        color: aqua;
+    }
+    label{
+        font-weight: bold;
+        
+    }
+    fieldset p{
+        font-family: 'Domine', serif;
+        word-spacing: 5px;
+        line-height: 25px;
+    }
+   
+
+     </style>
+
+</head>
+<body>
+    <header>
+        
+        <h1 class="titulo">ENEM MATEMÁTICA</h1>
+        <div class="menu"><a href="#">MENU</a></div>
+        <div class="contato"><a href="mailto:Christyan_tlou@hotmail.com">CONTATO</a></div>
+        <img class="logo" src="imagens/tec4.png" alt="LOGO TECH4ME">
+    </header>
+    <aside>
+        <img src="imagens/add.png" alt="" width="25" height="450">
+    </aside>
+    <article><br />
+            <br /><h1>Calme, não fique ansioso.. Respire!</h1>
+            <p>Matematíca sempre esteve presente no nosso dia a dia, mas quando se trata de vestibular...<br/> 
+             a galera fica louca! mas calma, nesse formulário você vai testar suas habilidades na matéria e <br />
+            poderá ver rapidamente como se saiu, aqui colocamos perguntas de nível básico a nível díficil<br/>
+            e se caso as coisas não vão como esperado, pelo menos você vai saber onde precisa melhorar, e isso<br/>
+            faz parte da vida, boa sorte com as questões e não se preocupe, sempre podemos evoluir!</p>
+    </article>
+    <fieldset>
+            <legend>Formulário de questões</legend>
+        <form action="#" method="post">
+        <div>    
+            <div class="cabecalho">
+                <p><em>(FÁCIL)</em></p>
+                <p>(ENEM 2020). A Pesquisa Nacional por Amostra de Domicílios (Pnad) é uma pesquisa <br/>feita anualmente pelo IBGE, exceto nos anos em que há Censo. Em um ano, foram entrevistados <br/>363 mil jovens para fazer um levantamento sobre suas atividades profissionais e/ou acadêmicas.<br/> Os resultados da pesquisa estão indicados no gráfico.</p>
+                <img src="imagens/primeirapergunta.webp" alt="primeira questão enem 2020">
+                <p>De acordo com as informações dadas, o número de jovens entrevistados que trabalha é:</p>
+            </div>
+            <div class="respostas">
+                <input name="primeira" type="radio" id="first" required>
+                <label for="first">A-114 708.</label>
+                <input name="primeira" type="radio" id="second">
+                <label for="second">B-164 076.</label>
+                <input name="primeira" type="radio" id="third">
+                <label for="third">C-213 444.</label>
+                <input name="primeira" type="radio" id="fourth">
+                <label for="fourth">D-284 592.</label>
+            </div>
+        </div>
+        <div>
+            <div class="cabecalho">
+                <hr/>
+                <p><em>(FÁCIL)</em><br/>
+                    <br/>(ENEM 2013)Uma loja acompanhou o número de compradores de dois produtos, A e B,<br/> durante os meses de janeiro, fevereiro e março de 2012. Com isso, obteve este gráfico:
+
+                    A loja sorteará um brinde entre os compradores do produto A e outro brinde entre os compradores do produto B.</p>
+                    <img src="imagens/segundapergunta.jpg" alt="segunda questão enem 2013">
+                    <p>Qual a probabilidade de que os dois sorteados tenham feito suas compras em fevereiro de 2012?</p>
+
+            </div>
+            <div class="respostas">
+                <input name="segunda" type="radio" id="um" required>
+                <label for="um">A-1/20</label>
+                <input name="segunda" type="radio" id="dois">
+                <label for="dois">B-3/242</label>
+                <input name="segunda" type="radio" id="tres">
+                <label for="tres">C-5/22</label>
+                <input name="segunda" type="radio" id="quatro">
+                <label for="quatro">D-6/25</label>
+                <input type="radio" id="cinco" name="segunda">
+                <label for="cinco">5/22</label>
+                
+            </div>
+            <div>
+                <div class="cabecalho">
+                    <hr/>
+                    <br/><em>(MEDIANA)</em></p>
+                    <p>(Enem 2020). Pesquisadores da Universidade de Tecnologia de Viena, na Áustria, produziram miniaturas de objetos<br/> em impressoras 3D de alta precisão. Ao serem ativadas, tais impressoras lançam feixes de laser sobre um tipo de resina, esculpindo o objeto desejado. <br/>O produto final da impressão é uma escultura microscópica de três dimensões, como visto na imagem ampliada.
+                    </p>
+                    <img src="imagens/pergunta3.webp" alt="Pergunta ENEM 2020">
+                    <p>A escultura apresentada é uma miniatura de um carro de Fórmula 1, com 100 micrômetros de comprimento. <br/>Um micrômetro é a milionésima parte de um metro. Usando notação científica, qual é a representação do comprimento dessa miniatura, em metro?</p>
+                </div>
+                <div class="respostas">
+                    <input name="terceira" type="radio" id="a" required>
+                    <label for="a">A-1,0 x 10<sup>-1</sup></label>
+                    <input name="terceira" type="radio" id="b">
+                    <label for="b">B-1,0 x 10<sup>-3</sup></label>
+                    <input name="terceira" type="radio" id="c">
+                    <label for="c">C-1,0 x 10<sup>-4</sup></label>
+                    <input name="terceira" type="radio" id="d">
+                    <label for="d">D-1,0 x 10<sup>-6</sup></label>
+                    <input name="terceira" type="radio" id="e">
+                    <label for="e">E-1,0 x 10<sup>-7</sup></label>
+                </div>
+            </div>
+            <div>
+                <div class="cabecalho">
+                    <hr/>
+                    <br/><em>(DIFÍCIL)</em>
+                    <p>A caixa-d’água de um edifício terá a forma de um paralelepípedo retângulo reto com volume igual a 28 080 litros. Em uma maquete que representa o edifício, a caixa-d’água tem dimensões 2 cm × 3,51 cm × 4 cm.
+
+                        Dado: 1 dm³ = 1 L.
+                        
+                        A escala usada pelo arquiteto foi</p>
+                </div>
+                <div class="respostas">
+                    <input name="quarta" type="radio" id="A" required>
+                    <label for="A">A-1 : 10</label>
+                    <input name="quarta" type="radio" id="B">
+                    <label for="B">B-1 : 100</label>
+                    <input name="quarta" type="radio" id="C">
+                    <label for="C">C-1 : 1 000</label>
+                    <input name="quarta" type="radio" id="D">
+                    <label for="D">D-1 : 10 000</label>
+                    <input name="quarta" type="radio" id="E">
+                    <label for="E">E-1 : 100 000</label>
+                </div>
+            </div>
+            <div>
+                <div class="cabecalho">
+                    <hr/>
+                   <br/> <em>(DIFÍCIL)</em>
+                    <p>O preço cobrado pelos aplicativos de motorista particular depende de três variáveis: distância percorrida, tempo de viagem e demanda de viagens no horário solicitado pelo usuário.<br/> Há também um valor fixo de R$ 3,00 por viagem solicitada, pago por todos os usuários, independentemente das demais variáveis.
+
+                        Os valores cobrados são os seguintes:
+                        
+                         
+                        
+                        • R$ 0,80 por quilômetro rodado;
+                        
+                        • R$ 0,30 por minuto de viagem;
+                        
+                        • 6% sobre o valor final da viagem caso a solicitação de motorista ocorra em um horário de grande demanda.</p>
+                </div>
+                <div class="respostas">
+                    <input name="quinta" type="radio" id="1" required>
+                    <label for="1">A-12</label>
+                    <input name="quinta" type="radio" id="2">
+                    <label for="2">B-13</label>
+                    <input name="quinta" type="radio" id="3">
+                    <label for="3">C-14</label>
+                    <input name="quinta" type="radio" id="4">
+                    <label for="4">D-15</label>
+                   
+                </div>
+            </div><br/>
+            <button type="submit">Envie suas respostas</button>
+
+
+
+
+
+        </div>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
